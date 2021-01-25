@@ -23,6 +23,13 @@ function StartProgram() {
         ul.appendChild(li)
     });
 
+    
+    let frm = document.getElementsByName('mainForm')[0];
+   //reset form data
+   frm.reset();
+   //prevents page from refreshing
+   return false;
+
 }
     
     
