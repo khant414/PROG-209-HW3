@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Form Example 1</title>
+      <link rel="stylesheet" type="text/css" href="site.css">
+</head>
+
+<body>
+<form name = "mainFrom" onsubmit="return false">
+	<fieldset id="customerPurchase">
+    <legend>Customer Information</legend>
+    <!--       for= some id connects the lable to to the input box -->
+    <label for="name"> Name:</label> 
+        <input name="name" id="name" />
+    <label for="city">City:</label>
+        <input name="city" id="city" />
+    <label for="paymentType" type="text">Payment Type</label>
+    <select id="paymentType" >
+        <option value="Visa / MC">Visa / MC</option>
+        <option value="Cash">Cash</option>
+        <option value="Debit">Debit</option>
+      </select>
+      <br><br>
+    <input type ="submit" value="Submit" onclick="StartProgram()">
+</form>
+</fieldset>
+
+<H2>Customer List</H2>
+    <ul id='output'>
+    </ul>
+
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
